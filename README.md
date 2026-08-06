@@ -1,6 +1,6 @@
 # A multimodal digital phenotyping dataset for depression and anxiety assessment under free-living conditions
 
-[![Data](https://img.shields.io/badge/Data-Zenodo-blue?logo=zenodo)](https://zenodo.org/records/18976769)
+[![Data](https://img.shields.io/badge/Zenodo-records/18976769-blue?logo=zenodo)](https://zenodo.org/records/18976769)
 
 <!-- --- -->
 
@@ -16,7 +16,7 @@
 ## Abstract
 
 Despite affecting hundreds of millions of people globally, depression and anxiety remain understudied through digital phenotyping in resource-constrained settings, where severe clinical workforce shortages heighten the need for scalable monitoring. 
-To address this gap, this study presents \textsc{Neurai-VN}, a multimodal dataset integrating passive sensing and active assessments across multiple temporal scales. 
+To address this gap, this study presents Neurai-VN, a multimodal dataset integrating passive sensing and active assessments across multiple temporal scales. 
 Data were collected from 100 Vietnamese adults recruited from the general population over two weeks. 
 Participants were clinically assessed and grouped into four mutually exclusive groups based on their primary clinical diagnoses: depressive disorders, anxiety disorders, healthy controls, and other psychiatric conditions.
 The dataset contains (1) continuous wearable physiological signals and smartphone-derived behavioral data captured under free-living conditions; (2) clinical assessment data, including DSM-5-based psychiatric diagnoses and symptom severity ratings; and (3) repeated self-reports.
