@@ -1,6 +1,6 @@
 # A multimodal digital phenotyping dataset for depression and anxiety assessment under free-living conditions
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18976769.svg)](https://doi.org/10.5281/zenodo.18976769)
+[![Data](https://img.shields.io/badge/Data-Zenodo-blue?logo=zenodo)](https://zenodo.org/records/18976769)
 
 <!-- --- -->
 
