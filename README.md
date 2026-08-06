@@ -1,11 +1,11 @@
-# Neurai-VN, A Real-world Multimodal Digital Phenotyping Dataset for Depression and Anxiety Disorders
+# A multimodal digital phenotyping dataset for depression and anxiety assessment under free-living conditions
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18976769.svg)](https://doi.org/10.5281/zenodo.18976769)
 
----
+<!-- --- -->
 
 ## Table of Contents
-- [Overview](#overview)
+- [Abstract](#abstract)
 - [Data Installation](#data-installation)
 - [Usage Notes](#usage-notes)
 - [Ethical Considerations](#ethical-considerations)
@@ -15,7 +15,17 @@
 
 ## Abstract
 
-Digital phenotyping (DP), integrating wearable and smartphone-based sensing, enables continuous and objective assessment of mental health in real-world settings. Despite its potential, DP datasets targeting mental health remain scarce in low- and middle-income countries (LMICs), particularly those combining clinician-validated diagnostic labels with structured self-report measures, limiting the generalisability, clinical validity, and equitable translation of DP models in these contexts. To address this gap, we present Neurai-VN, a real-world, high-resolution, multimodal dataset comprising passive sensing from wearable and smartphone devices,  collected from 100 Vietnamese adults (aged 18–50) from the general population over two weeks. Participants were clinically screened and categorized into four mutually exclusive groups: individuals with major depressive disorder, individuals with generalized or social anxiety disorder, healthy controls, and individuals with other psychiatric conditions. The dataset integrates continuous wearable physiological signals, smartphone-derived behavioral data, clinician-assigned DSM-5 diagnostic and severity labels, and responses to validated self-report measures, including the PHQ-9, GAD-7, and brief daily mood assessments. To capture these data in real-world conditions, we deployed an in-house mobile application on participants’ personal iOS and Android devices. From the raw recording, we retrieved and implemented a robust pipeline to process sensor data into a standardized format. To this end, we derived and released 1,259 day-level records per participant across 14 sensing modalities, of which 8 were recorded at 1-minute resolution, and the remaining 6 were aggregated as daily summary measures, alongside 2,342 validated self-report entries. By providing richly annotated, multimodal data from an LMIC cohort, Neurai-VN dataset enables reproducible development and validation of AI models for depression and anxiety and facilitates discovery of digital biomarkers from real-world signals, addressing the scarcity of clinically validated mental health datasets in underrepresented populations. 
+Despite affecting hundreds of millions of people globally, depression and anxiety remain understudied through digital phenotyping in resource-constrained settings, where severe clinical workforce shortages heighten the need for scalable monitoring. 
+To address this gap, this study presents \textsc{Neurai-VN}, a multimodal dataset integrating passive sensing and active assessments across multiple temporal scales. 
+Data were collected from 100 Vietnamese adults recruited from the general population over two weeks. 
+Participants were clinically assessed and grouped into four mutually exclusive groups based on their primary clinical diagnoses: depressive disorders, anxiety disorders, healthy controls, and other psychiatric conditions.
+The dataset contains (1) continuous wearable physiological signals and smartphone-derived behavioral data captured under free-living conditions; (2) clinical assessment data, including DSM-5-based psychiatric diagnoses and symptom severity ratings; and (3) repeated self-reports.
+The released dataset comprises 1,730 participant-day records from 14 passive sensing modalities and 3,642 longitudinal self-report records including PHQ-9 and GAD-7 assessments, daily symptom reports, and mood logs.
+The Neurai-VN provides a resource for benchmarking machine learning models, evaluating generalizability, and investigating multimodal digital biomarkers for depression and anxiety research in an underrepresented population.
+
+<p align="center">
+  <img src="asset/datacollection_7x3.41.png" alt="Data collection pipeline description" width="900">
+</p>
 
 ---
 
@@ -37,6 +47,20 @@ For automatic data installation, please follow the instructions below to downloa
 chmod +x script/data_installer.sh
 ./script/data_installer.sh
 ```
+
+---
+
+## Data Sample
+The figure below shows an example of passive sensing data collected from a real participant. The upper panels present wearable-derived signals, while the lower panels show representative smartphone sensing data.
+
+<p align="center">
+  <img src="asset/sample(2).png" alt="Representative passive sensing data from participant P0065" width="900">
+</p>
+
+<p align="center"><em>
+Figure 1. Representative passive sensing data from participant P0065 collected between November 1 and November 16. The top row shows wearable-derived measurements, including heart rate, sleep, and step count. The bottom row shows representative smartphone sensing data, including gyroscope, accelerometer, and Wi-Fi connectivity.
+</em></p>
+
 
 ---
 ## Usage Notes
@@ -69,9 +93,9 @@ If you find this work useful, please cite our paper:
                   Nicolas Vuillerme and
                   Huong T. T. Ha and
                   Hieu H. Pham},
-  title        = {Neurai-VN, A Real-world Multimodal Digital
-                   Phenotyping Dataset for Depression and Anxiety
-                   Disorders
+  title        = {Neurai-VN, A Multimodal Digital Phenotyping
+                   Dataset for Depression and Anxiety Assessment in
+                   Free-Living Conditions
                   },
   month        = may,
   year         = 2026,
