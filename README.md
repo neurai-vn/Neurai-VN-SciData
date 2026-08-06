@@ -27,6 +27,10 @@ The Neurai-VN provides a resource for benchmarking machine learning models, eval
   <img src="asset/datacollection_7x3.41.png" alt="Data collection pipeline description" width="900">
 </p>
 
+<p align="center"><em>
+Figure 1. Workflow for constructing the \textsc{Neurai-VN} dataset. First, a mobile application was developed for multimodal data acquisition. Next, participants were recruited, clinically screened for eligibility, and enrolled. Subsequently, data from multiple modalities were collected under real-world conditions. Finally, the collected data underwent retrieval, quality control, and serialization to generate the released dataset.
+</em></p>
+
 ---
 
 ## Data Installation
@@ -58,7 +62,7 @@ The figure below shows an example of passive sensing data collected from a real 
 </p>
 
 <p align="center"><em>
-Figure 1. Representative passive sensing data from participant P0065 collected between November 1 and November 16. The top row shows wearable-derived measurements, including heart rate, sleep, and step count. The bottom row shows representative smartphone sensing data, including gyroscope, accelerometer, and Wi-Fi connectivity.
+Figure 2. Representative passive sensing data from participant P0065 collected between November 1 and November 16. The top row shows wearable-derived measurements, including heart rate, sleep, and step count. The bottom row shows representative smartphone sensing data, including gyroscope, accelerometer, and Wi-Fi connectivity.
 </em></p>
 
 
