@@ -68,7 +68,6 @@ Figure 2. Representative passive sensing data from participant P0065 collected b
 
 ---
 ## Usage Notes
-This dataset is currently under preparation for submission to Nature Scientific Data.
 This dataset is publicly available via Zenodo under a Creative Commons license. It is provided for scientific and educational use only. Users agree not to attempt re-identification of any individuals, institutions, or hospitals. Any use of the dataset must include citation of the associated publication. Users of these data are requested to cite the Zenodo record (DOI) in any resulting publications, presentations, software, or derivative works.
 A peer-reviewed publication associated with this dataset will be linked upon publication.
 
