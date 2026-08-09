@@ -17,13 +17,7 @@
 
 ## Abstract
 
-Despite affecting hundreds of millions of people globally, depression and anxiety remain understudied through digital phenotyping in resource-constrained settings, where severe clinical workforce shortages heighten the need for scalable monitoring. 
-To address this gap, this study presents Neurai-VN, a multimodal dataset integrating passive sensing and active assessments across multiple temporal scales. 
-Data were collected from 100 Vietnamese adults recruited from the general population over two weeks. 
-Participants were clinically assessed and grouped into four mutually exclusive groups based on their primary clinical diagnoses: depressive disorders, anxiety disorders, healthy controls, and other psychiatric conditions.
-The dataset contains (1) continuous wearable physiological signals and smartphone-derived behavioral data captured under free-living conditions; (2) clinical assessment data, including DSM-5-based psychiatric diagnoses and symptom severity ratings; and (3) repeated self-reports.
-The released dataset comprises 1,730 participant-day records from 14 passive sensing modalities and 3,642 longitudinal self-report records including PHQ-9 and GAD-7 assessments, daily symptom reports, and mood logs.
-The Neurai-VN provides a resource for benchmarking machine learning models, evaluating generalizability, and investigating multimodal digital biomarkers for depression and anxiety research in an underrepresented population.
+Despite affecting hundreds of millions of people globally, depression and anxiety remain understudied through digital phenotyping in resource-constrained settings, where limited clinical capacity highlights the need for scalable monitoring. In this work, we present Neurai-VN, a multimodal dataset from a Vietnamese population integrating passive sensing and active assessments across multiple temporal scales. Data were collected from 100 Vietnamese adults recruited from the general population over two weeks. Participants were grouped into four mutually exclusive diagnostic groups based on clinical assessments: depressive disorders, anxiety disorders, healthy controls, and other psychiatric conditions. The dataset contains (1) wearable signals and smartphone-derived data captured under free-living conditions; (2) clinical assessment data, including DSM-5-based psychiatric diagnoses and symptom severity ratings; and (3) longitudinal self-reports, including PHQ-9, GAD-7, daily symptom reports, and mood logs. Overall, the released dataset contains 1,730 participant-day records from 13 passive sensing modalities and 3,642 self-report records. The \textsc{Neurai-VN} dataset provides a resource for reproducible computational analyses and machine learning research on multimodal digital phenotyping for mental health-related outcomes.
 
 <p align="center">
   <img src="asset/datacollection_7x3.41.png" alt="Data collection pipeline description" width="900">
@@ -37,15 +31,17 @@ Figure 1. Workflow for constructing the \textsc{Neurai-VN} dataset. First, a mob
 
 ## Data Installation
 
-The NEURAI-VN dataset is distributed as CSV exports at two temporal resolutions: daily and per-minute, to facilitate immediate use across Python and other programming environments while maintaining storage and memory efficiency. The dataset is hosted on [Zenodo](https://zenodo.org/), a general-purpose open-access repository, and is publicly available at [https://zenodo.org/records/18976769](https://zenodo.org/records/18976769).
+The NEURAI-VN dataset is hosted on [Zenodo](https://zenodo.org/), a general-purpose open-access repository, and is publicly available at [https://zenodo.org/records/18976769](https://zenodo.org/records/18976769). Each CSV includes the common columns ```timestamp``` and ```public_id```, followed by modality-specific channels. All timestamps are reported in local time.
 
-All data have undergone extensive cleaning and preprocessing prior to export to support downstream analyses. While the original PostgreSQL database exceeds 30GB in size, the processed CSV files provide a lightweight and user-friendly alternative that can be loaded with minimal effort, as described in the accompanying repository documentation. All timestamps are reported in local time.
+The dataset is distributed as CSV export, and organized into two main directories:
 
-The dataset is organized into two (02) main directories:
+- **Metadata**: Contains a demographic information file (```study_info.csv```) and a clinical annotation file (```annotation.csv```).
+- **Participants**: Contains a separate de-identified folder for each participant (e.g., ```P0001```). Each folder stores 17 CSV files organized into three sub-folders:
+  -```wearable/```: Contains 8 wearable signals
+  -```wearable/```: Contains 5 smartphone sensors data.
+  -```self_report/```: Contains 4 active assessments data.
 
-- **Participants**: This directory contains data from all 100 participants. Each participant is assigned a unique anonymized identifier (e.g., `P0001`) and stored in a separate de-identified folder. Each participant folder contains 18 CSV files spanning three data modalities: wearable sensor streams ($n=8$), smartphone behavioral logs ($n=6$), and ecological momentary assessments (EMAs; $n=4$).
 
-- **Metadata**: This directory contains study-level metadata, including demographic information ($n=1$) and clinical annotations ($n=1$).
 
 For automatic data installation, please follow the instructions below to download and extract the dataset from Zenodo. In addition, please ensure you have the necessary permissions and tools to access the dataset.
 
@@ -77,14 +73,12 @@ For questions concerning the dataset, please contact: [24cuong.pq@vinuni.edu.vn]
 
 ---
 ## Ethical Considerations
-This study was approved by the Institutional Review Board (IRB) of Neurology Department, Nguyen Tri Phuong Hospital (No. 1387/NTP-HDDD). 
-The written consent was obtained from all participants prior to data collection after they received detailed information about the study objectives, experiment procedures, data types, potential risks and the measures implemented to mitigate them. Participants were informed of their right to decline or withdraw from the study at any time without consequence. 
-
+This study was approved by the Institutional Review Board (IRB) of Neurology Department, Nguyen Tri Phuong Hospital, Ho Chi Minh, Vietnam (Approval No. 1387/NTP-HDDD). 
 ---
 
 ## Citation
 
-If you find this work useful, please cite our paper:
+If you find this work useful, please cite our dataset:
 
 ```bibtex
 @dataset{cuong_q_pham_2026_18976769,
