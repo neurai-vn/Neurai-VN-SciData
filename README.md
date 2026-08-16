@@ -5,9 +5,9 @@
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.18976768-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.18976768)
 
 <!-- --- -->
-**Version:** 1.0.1
+**Version:** 1.0.2
 
-**Released Date:** August 14, 2026
+**Released Date:** August 16, 2026
 
 
 
@@ -81,7 +81,7 @@ This study was approved by the Institutional Review Board (IRB) of Neurology Dep
 ---
 
 ## 3. Data Installation
-- The NEURAI-VN dataset (latest version) can be accessed at [https://zenodo.org/records/18976768](https://zenodo.org/records/18976768).
+- The NEURAI-VN dataset (latest version) can be accessed at [https://zenodo.org/records/18976768](https://zenodo.org/records/18976768) upon request.
 - For automatic data installation, please follow the instructions below to download and extract the dataset from Zenodo. In addition, please ensure you have the necessary permissions and tools to access the dataset.
 
 ```bash
@@ -120,7 +120,7 @@ The Neurai-VN dataset is currently under submission process to *Sci. Data*. The 
 If you use this dataset in your research, please cite the dataset on Zenodo.
 
 ```bibtex
-@dataset{cuong_q_pham_2026_21852329,
+@dataset{cuong_q_pham_2026_21969065,
   author       = {Cuong Q. Pham and
                   Duong T. H. Vu and
                   Long K. H. Nguyen and
@@ -138,8 +138,7 @@ If you use this dataset in your research, please cite the dataset on Zenodo.
   month        = aug,
   year         = 2026,
   publisher    = {Zenodo},
-  version      = {1.0.1},
-  doi          = {10.5281/zenodo.21852329},
-  url          = {https://doi.org/10.5281/zenodo.21852329},
+  doi          = {10.5281/zenodo.21969065},
+  url          = {https://doi.org/10.5281/zenodo.21969065},
 }
 ```
